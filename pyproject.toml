@@ -1,0 +1,20 @@
+[project]
+name = "vidar-agent"
+version = "0.1.0"
+description = "Terminal-based Vidar agent scaffold"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "rich>=13.0.0"
+]
+authors = [
+    {name = "Vidar Builder", email = "builder@example.com"}
+]
+
+[project.scripts]
+vidar = "vidar.cli:main"
+vidar-advanced = "vidar.advanced:main"
+
+[build-system]
+requires = ["setuptools>=65.0", "wheel"]
+build-backend = "setuptools.build_meta"
